@@ -33,5 +33,4 @@ void main() {
   }
 }
 
-##
-This project is a starting point for a Flutter plug-in package, a specialized package that includes platform-specific implementation code for Android and/or iOS.
+
