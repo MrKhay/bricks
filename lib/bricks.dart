@@ -14,9 +14,10 @@ void main() {
   AccountManager().createAccount(name, email, password);
 
   // Sign in
-  bool success = AccountManager().signIn(email, password);
+  final success = AccountManager().signIn(email, password);
 
-  if (success) {
+  // ignore: unnecessary_null_comparison
+  if (success != null) {
     debugPrint('Signed in successfully!');
   } else {
     debugPrint('Sign in failed.');

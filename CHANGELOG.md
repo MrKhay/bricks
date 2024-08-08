@@ -1,3 +1,5 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+
+
+* this is just a simple authentication libray.
