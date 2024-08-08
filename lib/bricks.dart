@@ -6,14 +6,15 @@ import 'repositories/repositories.dart';
 
 /// A Brick.
 void main() {
-  const username = 'player1';
+  const name = 'name';
+  const email = 'player1';
   const password = 'securePassword';
 
   // Create an account
-  AccountManager().createAccount(username, password);
+  AccountManager().createAccount(name, email, password);
 
   // Sign in
-  bool success = AccountManager().signIn(username, password);
+  bool success = AccountManager().signIn(email, password);
 
   if (success) {
     debugPrint('Signed in successfully!');
