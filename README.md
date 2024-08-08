@@ -16,18 +16,21 @@ Here’s a quick example of how to use **Bricks**:
 import 'package:bricks/bricks.dart';
 
 void main() {
-  const username = 'player1';
+  const name = 'player1';
+  const email='abc@gmail.com',
   const password = 'securePassword';
 
   // Create an account
-  AccountManager.createAccount(username, password);
+  AccountManager.createAccount(name, email, password);
 
   // Sign in
-  bool success = AccountManager.signIn(username, password);
+  final success= AccountManager.signIn(email, password);
 
-  if (success) {
+  if (success != null) {
     print('Signed in successfully!');
   } else {
     print('Sign in failed.');
   }
 }
+
+This project is a starting point for a Flutter plug-in package, a specialized package that includes platform-specific implementation code for Android and/or iOS.
